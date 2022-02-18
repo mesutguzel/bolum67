@@ -16,7 +16,7 @@ services:
   wordpress:
     image: wordpress:latest
     depends_on:
-    - mydata
+    - database
     restart: always
     ports:
       - "80:80"
@@ -37,4 +37,4 @@ networks:
   wpnet:
     driver: bridge
 
-# secrets:
+
